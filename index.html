@@ -10,6 +10,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,500&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Form</title>
@@ -19,54 +22,52 @@
     <div class="container-fluid p-0">
         
 
-        <form class="container w-50 ">
-            <div class="text-center">
+        <form class="container w-50 shadow mt-2">
+            <div class="text-center container-header">
                 <h2>Let's get you started!</h2>
                 <p>Hey there, let's set up your Renmoney account </p>
                 <hr>
-                
             </div>
             
+           <div class="mb-0 mt-0 p-0">
+            <label for="title" class="form-label m-0"><b>Title</b></label>
+            <select id= "title" class="form-select">
+                <option></option>
+              <option>Mr.</option>
+              <option>Mrs.</option>
+            </select>
+           </div>
+
             <div class="row g-3 align-items-center">
                 <div class="col-6">
                     <label for="text" class="form-label m-0"> <b>Name</b> </label>
                     <input type="text" class="form-control py-2" id="text">
-                    <label for="text" class="form-label m-0"> <small>First Name</small> </label>
+                    <label for="text" class="form-label m-0"> <small>FirstName</small> </label>
                 </div>
                 <div class="col-6">
                     <label for="LastName" class="form-label m-0"></label>
                     <input type="text" class="form-control py-2" id="LastName">
-                    <label for="LastName" class="form-label m-0"><small>Last Name</small> </label>
+                    <label for="LastName" class="form-label m-0"><small>LastName</small> </label>
                 </div>
             </div>
-            <div class="row g-3 align-items-center mb-4 mt-4">
+  
+            <div class="row g-3 align-items-center mb-3 mt-0">
                 <div class="col-md-6 col-12">
                     <label for="email" class="form-label m-0"> <b>Email</b> </label>
                     <input type="email" class="form-control py-2" id="email">
-                    <label for="email" class="form-label m-0"></label>
                 </div>
                 <div class="col-md-6 col-12">
-                    <label for="LastName" class="form-label m-0"><b>Phone Number</b> </label>
-                    <div class="row gx-1 align-items-center">
-                        <div class="col-3">
-                            <input type="tel" class="form-control py-2" id="tel">
-                            <label for="tel" class="form-label m-0"> <small>Area Code</small> </label>
-                        </div>
-                        <div class="col-9">
-                            <input type="tel" class="form-control py-2" id="tel">
-                            <label for="tel" class="form-label m-0"><small>Number</small> </label>
-                        </div>
-                    </div>
+                    <label for="tel" class="form-label m-0"><b>Phone Number</b> </label>
+                    <input type="tel" class="form-control py-2" id="tel">
                 </div>
             </div>
 
-            <div class="mb-2 mt-4">
+            <div class="mb-2 mt-1">
                 <label for="Address" class="form-label m-0"><b>Address</b> </label>
                 <input type="Address" class="form-control py-2" id="Address">
-                <label for="Address" class="form-label m-0"><small>Street Address</small> </label>
             </div>
 
-            <div class="row gx-2 align-items-center">
+            <div class="row gx-2 align-items-center mt">
                 <div class="col-4">
                     <input type="city" class="form-control py-2" id="city">
                     <label for="city" class="form-label m-0"> <small>City</small> </label>
@@ -76,37 +77,53 @@
                     <label for="Landmark" class="form-label m-0"><small>Landmark</small> </label>
                 </div>
                 <div class="col-4">
-                    <input type="city" class="form-control py-2" id="LGA">
-                    <label for="LGA" class="form-label m-0"><small>Local Govt. Area</small> </label>
+                    <select id="inputState" class="form-select py-2">
+                        <option></option>
+                      <option>Eket</option>
+                      <option>Ikot-Ekpene</option>
+                      <option>Ikot-ibio</option>
+                      <option>Itam</option>
+                      <option>Oron</option>
+                      <option>Uyo</option>
+                    </select>
+                    <label for="inputState" class="form-label m-0"><small>LGA</small></label>
                 </div>
             </div>
 
 
-            <div class="row gx-1 justify-content-center mt-2 align-items-center">
+            <div class="row gx-1 justify-content-center align-items-center">
                 <div class="col-4 w-25">
-                    <label for="image" class="form-label m-0"> <b>Photo</b> </label>
-                    <input type="file" class="form-control py-2" id="image">
+                    <label for="image" class="form-label m-0"> <b><small>Photo</small></b> </label>
+                    <input type="file" class="form-control" id="image">
                     
                 </div>
                 <div class="col-4 w-25">
-                    <label for="image" class="form-label m-0"> <b>Photo</b> </label>
-                    <input type="file" class="form-control py-2" id="image">
+                    <label for="image" class="form-label m-0"><b><small>Photo</small></b></label>
+                    <input type="file" class="form-control" id="image">
                     
                 </div>
                 <div class="col-4 w-25">
-                    <label for="image" class="form-label m-0"> <b>Photo</b> </label>
-                    <input type="file" class="form-control py-2" id="image">
+                    <label for="image" class="form-label m-0"> <b><small>Photo</small></b> </label>
+                    <input type="file" class="form-control" id="image">
                     
                 </div>
             </div>
 
-           <!-- <a id="btn" href="http://127.0.0.1:5501/index.html" type="submit" class="form-control py-2 mt-4 btn" data-component="button">MEMBERSHIP</a> -->
-           <div class="input-group mt-4">
-            <div class="input-group-text">
-              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <div class="row g-2 align-items-center m-0 p-0" >
+                <div class="col-6 mb-2">
+                    <label for="city" class="form-label m-0"> <small><b>Membership</b></small> </label>
+                    <input type="city" class="form-control" id="city">
+                </div>
+                <div class="col-6 mb-2">
+                    <label for="city" class="form-label"></label>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                          <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input" checked>
+                        </div>
+                        <button type="text" href="http://127.0.0.1:5501/index.html" class="form-control" aria-label="Text input with checkbox" ><b>Submit</b></button>
+                      </div>
+                </div>
             </div>
-            <button type="text" href="http://127.0.0.1:5501/index.html" class="form-control" aria-label="Text input with checkbox"><b>MEMBERSHIP</b></button>
-          </div>
         </form>
 
     </div>

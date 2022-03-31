@@ -1,12 +1,35 @@
-.form-control{
+.container-header{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.form-control,.form-select{
     background-color: white!important;
     border: 1px solid #9FC131!important;
     outline: none!important;
     
 }
-.form-control:focus{
+
+.form-control,.form-select:focus{
     box-shadow: none!important;
+   
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+#inputState{
+    color: #404b1a!important;
+}
+
 button.form-control{
     background-color: #9FC131!important;
     border: #9FC131!important;
@@ -32,6 +55,9 @@ button.form-control{
 @media (max-width: 991px) {
     .container{
       width: 100% !important;
-      height: 100%!important;
+      /* height: 100%!important; */
     }
+    /* .photoTxt{
+        font-size: 5px!important;
+    } */
   }
